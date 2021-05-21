@@ -1,0 +1,3 @@
+[submodule "blockchain-etl"]
+	path = blockchain-etl
+	url = https://github.com/helium/blockchain-etl.git
