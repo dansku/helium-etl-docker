@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  # postgres database
+  database:
+    image: "postgres" 
+    env_file:
+      - db.env
+    volumes:
+      - ./pgsql:/var/lib/postgresql/data/
+
+  # blockchain etl
+  etl:
+    image: helium/etl 
